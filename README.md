@@ -23,6 +23,16 @@ Building agentic AI systems, LLM eval infrastructure, and XAI pipelines at billi
 
 ---
 
+### Research
+
+**[Evaluating Agentic AI in the Wild: Failure Modes, Drift Patterns, and a Production Evaluation Framework](https://doi.org/10.5281/zenodo.19947138)**
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19947138.svg)](https://doi.org/10.5281/zenodo.19947138)
+
+Identifies 7 failure modes in production agentic AI systems and introduces PAEF (Production Agentic Evaluation Framework) — validated on four controlled experiments. Reference implementation: [llm-eval-toolkit](https://github.com/mukund1985/llm-eval-toolkit).
+
+---
+
 ### Open source
 
 **My repos**

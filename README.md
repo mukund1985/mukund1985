@@ -8,19 +8,37 @@ Building agentic AI systems, LLM eval infrastructure, and XAI pipelines at billi
 
 ### What I work on
 
-- **Agentic AI** — multi-step agent architectures, tool-use, planning, and safety guardrails at scale
-- **LLM Eval Infrastructure** — consistency, hallucination detection, factual grounding, response drift
-- **Explainable AI (XAI)** — decision explainability hooks, counterfactual reasoning, causal attribution
-- **Counterfactual Prediction** — pre-action impact estimation, what-if analysis for high-stakes decisions
+- **Agentic AI** — multi-step agent architectures, tool-use, planning, 
+  and safety guardrails at scale
+- **LLM Eval Infrastructure** — consistency, hallucination detection, 
+  factual grounding, response drift
+- **LLM Inference Infrastructure** — high-throughput model serving, 
+  torch.compile optimisation, KV cache efficiency, production latency SLAs
+- **MLOps & Observability** — drift detection, model monitoring, 
+  evaluation pipelines, contributor to evidentlyai/evidently
+- **Explainable AI (XAI)** — decision explainability hooks, 
+  counterfactual reasoning, causal attribution
+- **Security ML** — real-time risk scoring, access intelligence, 
+  anomaly detection at billion-event scale
 
 ---
 
 ### Open source
 
+**My repos**
 | Repo | Description |
 |---|---|
 | [llm-eval-toolkit](https://github.com/mukund1985/llm-eval-toolkit) | Production-grade framework for evaluating LLM agent outputs — consistency, grounding, hallucination, drift |
 | [agentic-safety-patterns](https://github.com/mukund1985/agentic-safety-patterns) | Pattern library for safe agentic systems — circuit breakers, explainability hooks, rollback, audit logging |
+| [retrieval-ranking-eval](https://github.com/mukund1985/retrieval-ranking-eval) | Dense retrieval + cross-encoder reranking pipeline benchmarked on BEIR datasets — NDCG@K, Recall@K, MRR |
+| [QuantumAI-IntradayRiskDemo](https://github.com/mukund1985/QuantumAI-IntradayRiskDemo) | Intraday risk pipeline: LSTM volatility forecasting + quantum-inspired QUBO/D-Wave portfolio optimisation |
+
+**Upstream contributions**
+| Repo | What |
+|---|---|
+| [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | Merged PR #1318 — ROUGE score descriptor (rouge1/2/L, F/P/R variants, 737 lines, 31 tests) |
+| [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | Merged PR — KL-divergence drift score bug fix |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | PR #41381 open — torch.compile config hash typing cleanups + cache_key_factors debug expansion |
 
 ---
 

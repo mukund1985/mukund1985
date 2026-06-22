@@ -47,7 +47,7 @@ Identifies 7 failure modes in production agentic AI systems and introduces PAEF 
 | Repo | What |
 |---|---|
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1434 open — NemotronH hybrid Mamba2-Transformer adapter (nvidia/Nemotron-H-8B/47B); SSMBlockBridge + optional Mamba submodules handle 4 heterogeneous layer types; 52 unit tests |
-| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1408 open — DeepSeek-V2 / V2-Lite / Coder-V2 architecture adapter; handles complex-exponential RoPE, optional Q LoRA path (V2-Lite), and unhookable gate; 17 integration tests |
+| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1408 **merged** ✅ — DeepSeek-V2 / V2-Lite / Coder-V2 architecture adapter; handles complex-exponential RoPE, optional Q LoRA path (V2-Lite), and unhookable gate; 17 integration tests |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1396 **merged** ✅ — direct path patching implementation (`get_act_patch_direct_path`), closes issue #111 opened by Neel Nanda in 2022; supports HookedTransformer and TransformerBridge, full test suite |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1399 **merged** ✅ — adapter unit tests for Phi-3 and Granite/GraniteMoe (55 tests), part of issue #1302 |
 | [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | PR #1863 open — ROUGE score descriptor (rouge1/2/L, F/P/R variants, NaN-safe; 737 lines, 31 tests); closes issue #1318 |

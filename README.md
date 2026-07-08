@@ -52,22 +52,24 @@ Identifies 7 failure modes in production agentic AI systems and introduces PAEF 
 **Upstream contributions**
 | Repo | What |
 |---|---|
-| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1486 open — Zamba2Bridge adapter for Zamba2-1.2B hybrid SSM; exposes hook_in/hook_out on all 38 layers + attention hooks on 6 hybrid layers; enables mechanistic interpretability on Mamba-2/attention hybrid models |
+| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1486 **merged** ✅ — Zamba2Bridge adapter for Zamba2-1.2B hybrid SSM; exposes hook_in/hook_out on all 38 layers + attention hooks on 6 hybrid layers; enables mechanistic interpretability on Mamba-2/attention hybrid models |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1434 **merged** ✅ — NemotronH hybrid Mamba2-Transformer adapter (nvidia/Nemotron-H-8B/47B); SSMBlockBridge + optional Mamba submodules handle 4 heterogeneous layer types; 52 unit tests |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1408 **merged** ✅ — DeepSeek-V2 / V2-Lite / Coder-V2 architecture adapter; handles complex-exponential RoPE, optional Q LoRA path (V2-Lite), and unhookable gate; 17 integration tests |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1396 **merged** ✅ — direct path patching implementation (`get_act_patch_direct_path`), closes issue #111 opened by Neel Nanda in 2022; supports HookedTransformer and TransformerBridge, full test suite |
 | [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | PR #1399 **merged** ✅ — adapter unit tests for Phi-3 and Granite/GraniteMoe (55 tests), part of issue #1302 |
+| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | Issue #1469 **assigned** ⏳ — Raven/Huginn (RavenForCausalLM) depth-recurrent adapter; weight-tied core iterated variable times for latent reasoning; novel mech-interp surface for AI-safety / latent CoT interpretability |
+| [TransformerLensOrg/TransformerLens](https://github.com/TransformerLensOrg/TransformerLens) | Issue #1462 **claimed** ⏳ — RWKV-7 "Goose" (RWKV7ForCausalLM) TransformerBridge adapter; attention-free recurrent architecture with matrix-valued state and rank-2 delta-rule updates |
 | [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | PR #1863 open — ROUGE score descriptor (rouge1/2/L, F/P/R variants, NaN-safe; 737 lines, 31 tests); closes issue #1318 |
 | [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | PR #1862 open — fixes silent data corruption in KL-divergence drift scoring; replaces hardcoded fill value with data-relative min_nonzero/10 |
 | [huggingface/trl](https://github.com/huggingface/trl) | PR #6120 open — adds `save_value_model` flag to PPOConfig; persists critic checkpoint alongside policy, making PPO runs resumable |
 | [huggingface/trl](https://github.com/huggingface/trl) | PR #6121 open — fixes mathematically-impossible negative entropy in PPO trainer; masks INVALID_LOGPROB padding tokens |
 | [huggingface/trl](https://github.com/huggingface/trl) | PR #6122 open — fixes OnlineDPOTrainer crash on eval_strategy=steps; adds prediction_step override |
 | [huggingface/trl](https://github.com/huggingface/trl) | PR #6123 open — implements Adaptive Beta-DPO (arXiv:2407.08639); per-batch beta scaling via preference margin EMA |
-| [huggingface/swift-transformers](https://github.com/huggingface/swift-transformers) | PR #370 open — fixes offline-mode crash; path canonicalization bug with `..` components in downloadBase |
+| [huggingface/swift-transformers](https://github.com/huggingface/swift-transformers) | PR #370 open — fixes offline-mode crash; path canonicalization bug with `...` components in downloadBase |
 | [huggingface/swift-transformers](https://github.com/huggingface/swift-transformers) | PR #371 open — fixes fatal crash on Task cancellation; replaces `try!` with `async throws` across CoreML generation call chain |
 | [huggingface/swift-transformers](https://github.com/huggingface/swift-transformers) | PR #372 open — adds `encodeWithOffsets()` returning character-span offsets per token, matching Python `return_offsets_mapping=True` |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | PR #46068 open — reject invalid negative values for `max_logprobs` and `long_prefill_token_threshold` via Pydantic field validators; closes issue #43985 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | PR #41381 open — torch.compile config hash typing cleanups + cache_key_factors debug expansion |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | PR #41381 open (needs rebase) — torch.compile config hash typing cleanups + richer cache_key_factors.json debug output; part of #39479 |
 
 ---
 

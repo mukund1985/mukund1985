@@ -25,6 +25,10 @@ Building agentic AI systems, LLM eval infrastructure, and XAI pipelines at billi
 
 ### Research
 
+**[Production Failure Modes in Large Language Model APIs: An Empirical Cross-Provider Study](https://github.com/mukund1985/llm-provider-failure-study)** *(submitted to arXiv, August 2026)*
+
+Measures five production failure modes across Claude, GPT-4o-mini, and Gemini using 1,668 real API calls with bootstrap confidence intervals and Bonferroni-corrected hypothesis tests. Key finding: system prompts fail to enforce mandatory disclaimers when users push back (0-33% adherence across providers, replicated across two dates) — with direct implications for compliance-critical deployments. Code and data: [llm-provider-failure-study](https://github.com/mukund1985/llm-provider-failure-study).
+
 **[Mechanistic Interpretability of Hybrid SSM-Attention Models: Induction, Factual Recall, and Weight-Tied Attention in Zamba2-1.2B](https://github.com/mukund1985/mech-interp-hybrid-ssm)** *(arXiv preprint, under review)*
 
 First mechanistic analysis of weight-tied attention in hybrid SSM architectures. Introduces the SSM Induction Score (SSMI) and shows that Zamba2-1.2B's 6 shared-attention layers implement functionally distinct computations (induction heads at layers 5/11, induction completion at layer 23, factual recall at layer 35) despite identical QKV weights — driven entirely by residual stream context. Code: [mech-interp-hybrid-ssm](https://github.com/mukund1985/mech-interp-hybrid-ssm).
